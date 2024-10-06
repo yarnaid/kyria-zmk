@@ -93,12 +93,12 @@
             // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_2 {
+        symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp LS(DLLR)  &kp LS(PERCENT)                                  &kp CARET  &kp AMPS   &kp LS(ASTERISK)  &kp LS(LEFT_PARENTHESIS)  &kp LS(RIGHT_PARENTHESIS)  &kp BSPC
+&trans  &trans    &trans  &trans    &trans        &trans                                           &kp MINUS  &kp EQUAL  &trans            &trans                    &kp BACKSLASH              &kp GRAVE
+&trans  &trans    &trans  &trans    &trans        &trans           &trans  &trans  &trans  &trans  &kp UNDER  &kp PLUS   &trans            &trans                    &kp PIPE                   &kp TILDE
+                          &trans    &trans        &trans           &trans  &trans  &trans  &trans  &trans     &trans     &trans
             >;
         };
     };
