@@ -1,5 +1,0 @@
-&backlight {
-    status = "okay";
-    label = "ZMK_BACKLIGHT";
-    pwms = <&pwm0 1 100000>; // Adjust PWM settings as needed
-};
