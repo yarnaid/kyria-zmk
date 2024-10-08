@@ -90,7 +90,7 @@
     mosi-pin = <6>;
     // Unused pins, needed for SPI definition, but not used by the ws2812 driver
     sck-pin = <5>;
-    miso-pin = <7>;
+    // miso-pin = <7>;
 
     led_strip1: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
