@@ -1,5 +1,0 @@
-/ {
-    chosen {
-        zmk,backlight = <&pwm0>;
-    };
-};

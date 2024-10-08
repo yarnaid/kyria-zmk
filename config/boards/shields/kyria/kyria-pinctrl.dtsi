@@ -1,5 +1,0 @@
-&pwm0 {
-    compatible = "pwm";
-    #pwm-cells = <2>;
-    status = "okay";
-};
