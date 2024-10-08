@@ -1,3 +1,5 @@
+
+/dts-v1/;
 #include "nice_nano_v2-pinctrl.dtsi"
 
 
