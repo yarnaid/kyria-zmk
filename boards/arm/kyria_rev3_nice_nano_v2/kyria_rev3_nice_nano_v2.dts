@@ -1,0 +1,15 @@
+/dts-v1/;
+/ {
+    chosen {
+        zmk,backlight = &backlight;
+    };
+
+    backlight: backlight {
+        compatible = "pwm-leds";
+        pwms = <&pwm0 1 100000>;
+        label = "ZMK_BACKLIGHT";
+        max-brightness = <255>;
+    };
+};
+
+/include/ "nrf52840_qiaa.dtsi"
