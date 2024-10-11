@@ -12,8 +12,10 @@
 #include <dt-bindings/zmk/rgb.h>
 
 /* Uncomment this block if using RGB */
+
 &led_strip {
     // chain-length = <6>;
+
     chain-length = <31>; // Uncomment if using both per-key and underglow LEDs
     // chain-length = <25>; // Uncomment if using only per-key LEDs.
 };
@@ -69,10 +71,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R    &kp T                                                                     &kp Y    &kp U     &kp I      &kp O    &kp P     &kp BSLH
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F    &kp G                                                                     &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V    &kp B    &mo 1      &rgb_ug RGB_COLOR_HSB(125,98,47)  &mo 2    &kp LSHFT  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                         &kp LGUI  &kp DEL  &kp RET  &kp SPACE  &kp ESC                           &kp RET  &kp SPACE  &kp TAB  &kp BSPC  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                                                                        &kp Y       &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G                                                                        &kp H       &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B   &mo 1      &rgb_ug RGB_COLOR_HSB(125,98,47)  &mo 2    &kp LSHFT      &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &gresc
+                         &none  &none  &gresc  &kp SPACE  &kp TAB                           &kp RET  &kp BACKSPACE  &kp DELETE  &none  &kp RALT
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -86,10 +88,10 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
 
             bindings = <
-&trans  &kp N1        &kp N2        &kp N3                 &kp N4                 &kp N5                                                 &kp N6    &kp N7  &kp N8    &kp N9     &kp N0  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &trans                 &out OUT_TOG           &bt BT_CLR                                             &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &kp N1        &kp N2        &kp N3                 &kp N4                 &kp N5                                                         &kp N6    &kp N7  &kp N8    &kp N9     &kp N0  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &trans                 &out OUT_TOG           &bt BT_CLR                                                     &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans
 &trans  &trans        &trans        &kp LS(LA(LC(LG(A))))  &kp LS(LA(LC(LG(B))))  &kp LS(LA(LC(LG(C))))  &trans  &studio_unlock  &trans  &trans  &trans    &trans  &trans    &trans     &trans  &trans
-                                    &trans                 &trans                 &trans                 &trans  &trans  &trans  &trans  &trans    &trans  &trans
+                                    &trans                 &trans                 &trans                 &trans  &trans          &trans  &trans  &trans    &trans  &trans
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
