@@ -71,10 +71,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&kp TAB    &kp Q                   &kp W       &kp E        &kp R             &kp T                                                                               &kp Y       &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LCTRL  &mt LS(LA(LC(LGUI))) A  &mt LALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                                                                               &kp H       &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z                   &kp X       &kp C        &kp V             &kp B      &mo 1        &rgb_ug RGB_COLOR_HSB(125,98,47)  &mo 0    &kp LSHFT        &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &gresc
-                                               &none        &none             &lt 2 ESC  &lt 1 SPACE  &kp TAB                           &kp RET  &lt 3 BACKSPACE  &kp DELETE  &none  &kp RALT
+&kp TAB    &kp Q                   &kp W       &kp E        &kp R             &kp T                                                                                   &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LCTRL  &mt LS(LA(LC(LGUI))) A  &mt LALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                                                                                   &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z                   &kp X       &kp C        &kp V             &kp B      &mo 1        &rgb_ug RGB_COLOR_HSB(125,98,47)  &mo 0        &kp LSHFT        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &gresc
+                                               &none        &none             &lt 2 ESC  &lt 1 SPACE  &kp TAB                           &lt 4 ENTER  &lt 3 BACKSPACE  &lt 5 DEL  &none  &kp RALT
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -121,6 +121,15 @@
 &trans  &kp COLON       &kp DOLLAR  &kp PERCENT  &kp CARET  &kp PLUS                                       &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
 &trans  &kp TILDE       &kp EXCL    &kp AT       &kp HASH   &kp PIPE  &trans    &trans     &trans  &trans  &trans  &trans     &trans     &trans    &trans    &trans
                                     &trans       &trans     &kp LPAR  &kp RPAR  &kp UNDER  &trans  &trans  &trans  &trans     &trans
+            >;
+        };
+
+        fun {
+            bindings = <
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN                                      &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK                                       &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK  &trans     &trans   &trans  &trans  &trans  &trans     &trans     &trans    &trans    &trans
+                         &trans  &trans  &trans           &kp SPACE  &kp TAB  &trans  &trans  &trans  &trans     &trans
             >;
         };
     };
