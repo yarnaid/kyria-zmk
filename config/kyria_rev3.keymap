@@ -58,6 +58,16 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <18 19>;
         };
+
+        rescape {
+            bindings = <&gresc>;
+            key-positions = <19 20>;
+        };
+
+        lescape {
+            bindings = <&gresc>;
+            key-positions = <16 15>;
+        };
     };
 
     keymap {
